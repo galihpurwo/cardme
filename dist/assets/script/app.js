@@ -4,7 +4,7 @@ const container = document.querySelector('.container');
 //items
 const title = document.querySelector('.title');
 const gue = document.querySelector('.gue img');
-//const title = document.querySelector('.$title');
+const clickme = document.querySelector('.clickme');
 //const title = document.querySelector('.$title');
 //const title = document.querySelector('.$title');
 
@@ -13,6 +13,7 @@ container.addEventListener('mousemove', (e)=>{
 let xAxis = (window.innerWidth / 2 - e.pageX)/25;
 let yAxis = (window.innerHeight / 2 - e.pageY)/25;
 card.style.transform   =  `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+
 });
 
 //fungsi  animasi ketika mouse mendekat ke kartu
@@ -21,6 +22,7 @@ container.addEventListener('mouseenter', e=>{
     title.style.transform = "translateZ(100px)";
     //popout 
     gue.style.transform = "translateZ(100px)" //rotateX(-30deg)";
+    clickme.style.transform = "translateZ(50px)"
  });
 
 //fungsi  animasi ketika mouse menjauh dr kartu
@@ -30,6 +32,7 @@ container.addEventListener('mouseleave', e =>{
     title.style.transform = "translateX(0px)";
     //popin 
     gue.style.transform = "translateZ(0px)"// rotateX(0deg)";
+    clickme.style.transform = "translateZ(0px)"
 });
 
 
