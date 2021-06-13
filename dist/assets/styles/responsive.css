@@ -4,7 +4,7 @@
 @media (max-width: 1000px) {
     /* Tambahkan CSS untuk lesson */
     .info{
-      width : 50%;
-      margin-bottom:50px;
+      width : 100%;
+      margin-bottom:20px;
     }
   }
