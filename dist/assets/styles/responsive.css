@@ -3,6 +3,9 @@
 /* Tambahkan breakpoint max-width: 1000px */
 @media (max-width: 1000px) {
     /* Tambahkan CSS untuk lesson */
+    .card{
+        width: 300px;
+    }
     .info{
       width : 100%;
       margin-bottom:20px;
